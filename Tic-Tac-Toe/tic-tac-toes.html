@@ -1,0 +1,363 @@
+<html>
+
+    <head>
+        <style>
+           #board {
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                border:1px solid black;
+                width: 610px;
+                height: 605px;
+            }
+
+            #tile1 {
+                float:left;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+
+            }
+
+            #tile2 {
+                display: inline-block;
+                margin-left: 2px;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+            }
+
+            #tile3 {
+                float:right;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+              
+            }
+
+             #tile4 {
+                float:left;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+              
+            }
+
+             #tile5 {
+                display: inline-block;
+                margin-left: 2px;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+              
+            }
+
+            #tile6 {
+                float:right;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+              
+            }
+
+            #tile7 {
+                float:left;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+            }
+
+            #tile8 {
+                display: inline-block;
+                margin-left: 2px;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+            }
+
+            #tile9 {
+                float:right;
+                border:1px solid black;
+                width: 200px;
+                height: 200px;
+                font-size: 100px;
+                text-align: center;
+                line-height: 200%;
+            }
+
+
+    </style>
+    </head>
+
+<body>
+
+    <div id="board">
+        <div id="tile1" onclick="displayText('tile1'); this.onclick=null;">
+        </div>
+
+        <div id="tile2" onclick="displayText('tile2'); this.onclick=null;">
+        </div>
+
+        <div id="tile3" onclick="displayText('tile3'); this.onclick=null;">
+        </div>
+
+        <div id="tile4" onclick="displayText('tile4'); this.onclick=null;">
+        </div>
+    
+        <div id="tile5" onclick="displayText('tile5'); this.onclick=null;">
+        </div>
+    
+        <div id="tile6" onclick="displayText('tile6'); this.onclick=null;">
+        </div>
+
+        <div id="tile7" onclick="displayText('tile7'); this.onclick=null;">
+        </div>
+        
+        <div id="tile8" onclick="displayText('tile8'); this.onclick=null;">
+        </div>
+        
+        <div id="tile9" onclick="displayText('tile9'); this.onclick=null;">
+        </div>
+        
+
+</body>
+
+<script>
+    let turn = 1;
+
+
+    function displayText(tile){
+
+ 
+
+        if (tile==="tile1" && turn ===1 ){
+            document.getElementById("tile1").textContent = 'O';
+            
+            turn=2;
+
+          
+
+   
+        }
+
+        else if (tile==="tile1" && turn ===2 ){
+            document.getElementById("tile1").textContent = 'X';
+            turn=1;
+           
+        }
+
+        if (tile==="tile2" && turn ===1){
+            document.getElementById("tile2").textContent = 'O';
+            turn=2;
+          
+        }
+
+        else if (tile==="tile2" && turn ===2){
+            document.getElementById("tile2").textContent = 'X';
+            turn=1;
+         
+        }
+
+        if (tile==="tile3" && turn ===1){
+            document.getElementById("tile3").textContent = 'O';
+            
+            turn=2;
+           
+        }
+
+        else if (tile==="tile3" && turn ===2){
+            document.getElementById("tile3").textContent = 'X';
+            turn=1;
+           
+        }
+
+        if (tile==="tile4" && turn ===1){
+            document.getElementById("tile4").textContent = 'O';
+            
+            turn=2;
+     
+   
+        }
+
+        else if (tile==="tile4" && turn ===2){
+            document.getElementById("tile4").textContent = 'X';
+
+            turn=1;
+           
+        }
+
+        if (tile==="tile5" && turn ===1){
+            document.getElementById("tile5").textContent = 'O';
+            
+            turn=2;
+         
+        }
+
+        else if (tile==="tile5" && turn ===2){
+            document.getElementById("tile5").textContent = 'X';
+
+            turn=1;
+           
+           
+        }
+        if (tile==="tile6" && turn ===1){
+            document.getElementById("tile6").textContent = 'O';
+            
+            turn=2;
+         
+        }
+
+        else if (tile==="tile6" && turn ===2){
+            document.getElementById("tile6").textContent = 'X';
+
+            turn=1;
+         
+        }
+
+        if (tile==="tile7" && turn ===1){
+            document.getElementById("tile7").textContent = 'O';
+            
+            turn=2;
+            
+        }
+
+        else if (tile==="tile7" && turn ===2){
+            document.getElementById("tile7").textContent = 'X';
+
+            turn=1;
+         
+        }
+
+        if (tile==="tile8" && turn ===1){
+            document.getElementById("tile8").textContent = 'O';
+            
+            turn=2;
+          
+        }
+
+        else if (tile==="tile8" && turn ===2){
+            document.getElementById("tile8").textContent = 'X';
+
+            turn=1;
+           
+        }
+
+        if (tile==="tile9" && turn ===1){
+            document.getElementById("tile9").textContent = 'O';
+            
+            turn=2;
+            
+        }
+
+        else if (tile==="tile9" && turn ===2){
+            document.getElementById("tile9").textContent = 'X';
+
+            turn=1;
+           
+        }
+        winCondition();
+
+    }
+
+    function getText(tile){
+        return document.getElementById(tile).textContent;
+    }
+
+    function winCondition(){
+
+        if (getText('tile1')==='O' && getText('tile2')==='O' && getText('tile3') ==='O'){
+            alert("p1 wins");
+        }
+
+        if (getText('tile4')==='O' && getText('tile5')==='O' && getText('tile6') ==='O'){
+           alert("p1 wins");
+        }
+
+        if (getText('tile7')==='O' && getText('tile8')==='O' && getText('tile9') ==='O'){
+            alert('p1 wins');
+        }
+        
+        if (getText('tile1')==='O' && getText('tile4')==='O' && getText('tile7') ==='O'){
+            alert('p1 wins');
+        }
+
+        if (getText('tile2')==='O' && getText('tile5')==='O' && getText('tile8') ==='O'){
+            alert('p1 wins');
+        }
+
+        if (getText('tile3')==='O' && getText('tile6')==='O' && getText('tile9') ==='O'){
+            alert('p1 wins');
+        }
+
+        if (getText('tile1')==='O' && getText('tile5')==='O' && getText('tile9') ==='O'){
+            alert('p1 wins');
+        }
+
+        if (getText('tile3')==='O' && getText('tile5')==='O' && getText('tile7') ==='O'){
+            alert('p1 wins');
+        }
+
+
+        if (getText('tile1')==='X' && getText('tile2')==='X' && getText('tile3') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile4')==='X' && getText('tile5')==='X' && getText('tile6') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile7')==='X' && getText('tile8')==='X' && getText('tile9') ==='X'){
+            alert('p2 wins');
+        }
+        
+        if (getText('tile1')==='X' && getText('tile4')==='X' && getText('tile7') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile2')==='X' && getText('tile5')==='X' && getText('tile8') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile3')==='X' && getText('tile6')==='X' && getText('tile9') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile1')==='X' && getText('tile5')==='X' && getText('tile9') ==='X'){
+            alert('p2 wins');
+        }
+
+        if (getText('tile3')==='X' && getText('tile5')==='X' && getText('tile7') ==='X'){
+            alert('p2 wins');
+        }
+    }
+
+    </script>
+
+</html>
