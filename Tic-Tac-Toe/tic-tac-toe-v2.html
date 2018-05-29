@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #board {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        border: 1px solid black;
+        width: 600px;
+        height: 600px;
+      }
+
+      .square {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 100;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="board">
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+      <div class="square"></div>
+    </div>
+  </body>
+</html>
